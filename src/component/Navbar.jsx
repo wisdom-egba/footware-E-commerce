@@ -17,13 +17,13 @@ const Navbar = () => {
         <li className="p-4">Contact</li>
       </ul>
       <div onClick={setNavBar} className= ' block  md:hidden '>
-        {!nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
+        {!nav ? <AiOutlineMenu size={30} /> : <AiOutlineClose size={30} />}
       </div>
       <div
-        className={
-          !nav
-            ? "fixed left-0 top-0 w-[40%] bg-[#000300] h-full ease-in-out duration-500"
-            : "fixed left-[-100%]"
+        className=  {
+          nav
+            ? "fixed left-0 top-0 w-[40%] bg-[#000300] h-full ease-in-out duration-500 lg:hidden md:hidden"
+            : "fixed left-[-100%] "
         }
       >
          <h1 className=" w-full text-3xl font-bond text-[#E2703A] m-4 mt-10">Shu:HUB</h1>
